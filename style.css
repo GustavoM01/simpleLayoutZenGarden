@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+  background-color: lightgray;;
+  color:#535353
+}
+
+h1 {
+  font-family: "Newsreader", serif;
+  font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+}
+
+p, a, li {
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+}
+
+hr {
+    border-top: 2px dotted;
+    border-bottom: none; 
+}
+
+.page-wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+header,
+.page-wrapper > * > div,
+.page-wrapper > * > section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    z-index: 1;
+}
+
+header {
+    background: cover no-repeat;
+    background-image: url(img/header-img.png);
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 120px;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 700px;
+}
+
+div .title {
+    background-color: transparent;
+    text-align: center;
+    width: 300px;
+}
+
+header .title {
+    line-height: 1.4rem;
+}
+
+header .title h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/*aside h2,
+main h2 {
+    background-clip: unset;
+    background-image: linear-gradient(to top, rgb(255, 255, 255, 1), rgb(255, 255, 255, 0)), repeating-linear-gradient(
+      135deg,
+      white,
+      white 6px,
+      lightgray 6px,
+      lightgray 16px
+      );
+}*/
+
+div .stripes {
+    
+    background-image: linear-gradient(to top, rgb(255, 255, 255, 1), rgb(255, 255, 255, 0)), repeating-linear-gradient(
+      135deg,
+      white,
+      white 6px,
+      lightgray 6px,
+      lightgray 16px
+      );
+    height: 2rem;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 170px;
+    z-index: 2;
+}
+
+aside div {
+    margin: 10px 20px 10px 0px;
+}
+
+main section {
+    margin: 10px auto;   
+}
+
+section > p {
+    margin-bottom: 0.8rem;
+    width: 85%;
+}
+
+section p:last-of-type {
+    margin-bottom: 0px;
+}
+
+section:nth-of-type(1) > p,
+section:nth-of-type(3) > p,
+section:nth-of-type(3) > h2,
+section:nth-of-type(5) > p,
+section:nth-of-type(5) > h2 {
+    margin-left: 15%;
+}
+
+aside {
+    flex: initial;
+    position: relative;
+    width: 200px;
+}
+
+aside a,
+.title-em {
+  color: hotpink;
+  text-decoration: none;
+}
+
+aside .design-selection a {
+  font-weight: bold;
+}
+
+main {
+    flex: 1 1 0px;
+    max-width: 800px;
+    position: relative;
+}
+
+main a {
+  color: hotpink;
+}
+
+ul {
+  list-style: disclosure-closed inside;
+}
+
+ul li::marker {
+  color: hotpink;
+}
+
+li {
+  padding: 4px 0px 8px 0px;
+}
+
