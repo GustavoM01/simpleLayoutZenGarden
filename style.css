@@ -56,7 +56,7 @@ main > section {
 
 header {
     background: cover no-repeat;
-    background-image: url(img/header-img.png);
+    background-image: url(img/header-img.png), url(img/waves-bg.png), url(img/radial-stripe-bg.png);
     border-radius: 0px 0px 10px 10px;
     display: flex;
     flex-flow: column wrap;
@@ -147,6 +147,10 @@ aside a,
 .title-em {
   color: hotpink;
   text-decoration: none;
+}
+
+.bold-em {
+  font-weight: bold;
 }
 
 aside .design-selection a {
